@@ -18,16 +18,16 @@ $button2013 = GUICtrlCreateButton("2013", 90, 40, 60)
 ;;GUICtrlSetState(-1, $GUI_DISABLE)
 $button2012and13 = GUICtrlCreateButton("now-Mar.8", 40, 70, 85)
 
-$estoque = GUICtrlCreateInput("", 159, 10, 45, 19)
-$estoque2 = GUICtrlCreateInput("", 159, 35, 45, 19)
-$japediu = GUICtrlCreateInput("", 82, 10, 75, 19) 
+;; $estoque = GUICtrlCreateInput("", 159, 10, 45, 19)
+;; $estoque2 = GUICtrlCreateInput("", 159, 35, 45, 19)
+$japediu = GUICtrlCreateInput("", 82, 10, 165, 19) 
 ;;$notes = GUICtrlCreateEdit("Último container - saldo anterior", 208, 10, 348, 100)
 ;;$notes = GUICtrlCreateEdit("", 208, 10, 348, 100)
 
-$buttonNext = GUICtrlCreateButton("next", 166, 60)
+$buttonNext = GUICtrlCreateButton("next", 166, 60, 70)
 ;; $buttonClip = GUICtrlCreateButton("copy", 166, 90)
-$buttonSkip = GUICtrlCreateButton("skip", 166, 90)
-$buttonClear = GUICtrlCreateButton("clear", 208, 10)
+$buttonSkip = GUICtrlCreateButton("skip", 166, 90, 70)
+;; $buttonClear = GUICtrlCreateButton("clear", 208, 10)
 $buttonLoad = GUICtrlCreateButton("load", 5, 75)
 ;$buttonAddUC = GUICtrlCreateButton("add UC", 550, 40)
 
@@ -38,7 +38,7 @@ GUICtrlSetOnEvent($button2013, "fnGen2013")
 GUICtrlSetOnEvent($button2012and13, "fnGen2012and13")
 GUICtrlSetOnEvent($buttonNext, "fnNext")
 GUICtrlSetOnEvent($buttonSkip, "fnSkip")
-GUICtrlSetOnEvent($buttonClear, "fnClearEdit")
+;; GUICtrlSetOnEvent($buttonClear, "fnClearEdit")
 ;; GUICtrlSetOnEvent($buttonClip, "fnCopyToClipboard")
 GUICtrlSetOnEvent($buttonLoad, "fnLoad")
 
@@ -53,8 +53,8 @@ While 1
    If $oldcode <> $newcode Then
 	;;  GUICtrlSetData($notes, "Último container - saldo anterior")
 	;;  GUICtrlSetData($notes, "")
-	  GUICtrlSetData($estoque, "")
-	  GUICtrlSetData($estoque2, "")
+	  ;; GUICtrlSetData($estoque, "")
+	  ;; GUICtrlSetData($estoque2, "")
 	  $oldcode = $newcode
    EndIf
    Sleep(100)
