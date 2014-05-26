@@ -1,0 +1,31 @@
+1. create folder in c:/Users/Heitor/Desktop/install Autoit/Scripts/cardex/
+named with current date (for example, 2014_05_26)
+
+2. create text file "numbers.txt" that includes ONLY NUMBERS of product codes
+
+3. run Desktop/install Autoit/AutoIt3 and select addcodletters.au3
+
+4. load the file from step 2.
+
+5. click on next and enter the letters that appear in Produto (caps lock not
+needed). If only one code appears, click OK. Enter a space for products that
+do not have a letter.
+
+6. save as "verificar.txt"
+
+7. run Desktop/PTL scripts/cardexverif2autoit and enter the folder from
+step 1. This runs runods2autoit. sortedautoit.txt in install Autoit/Scripts is
+created.
+
+8. run Desktop/PTL scripts/PyGUI (reposicao saved data)
+
+9. run Desktop/install Autoit/AutoIt3 and select cardexverif.au3
+
+10. click on next
+
+11. the 3 fields in Tk GUI are Vendas 2013, Vendas 2014 (current, not saved),
+and Qtde. caixa grande, but may hold any value. Only the middle value is not
+saved.
+
+12. if a mistake is made, Cardex Verif.au3 cannot be rewound and must be
+restarted. skip will advance the list without affecting other windows.
